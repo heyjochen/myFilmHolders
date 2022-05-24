@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+.card {
+  color: #57739f;
+}
+
+.lang {
+  color: black;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
