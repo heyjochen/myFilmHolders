@@ -1,0 +1,9 @@
+@use '../abstracts/index';
+
+.card{
+    color: index.$primary;
+}
+
+.lang{
+    color: black;
+}
