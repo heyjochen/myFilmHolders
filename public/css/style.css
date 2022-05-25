@@ -1,30 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-.card {
-  color: #57739f;
-}
-
-.lang {
-  color: black;
-}
-
-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-footer {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 .container {
-  max-width: 1280px;
+  max-width: 80rem;
   margin: 0 auto;
 }
 
+:root {
+  --fs-xl: clamp(3.5rem, 12vw + 1rem, 8rem);
+  --fs-600: 1.5rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 html, body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -35,6 +27,46 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.header {
+  padding: 2em 0;
+  border: 1px solid red;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logotitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2em;
+}
+.header__nav {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  display: flex;
+  gap: 6em;
+  border: 1px solid black;
+}
+.header__link {
+  font-size: 2em;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .header__container {
+    justify-content: center;
+  }
+  .header__logotitle {
+    display: none;
+  }
+  .header__nav {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

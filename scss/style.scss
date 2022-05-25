@@ -1,22 +1,24 @@
 @use 'abstracts/index';
-@use 'components/cards';
-@use 'components/header';
-@use 'components/footer';
 @use 'components/container';
 
-// body{
-//     color: index.$secondary;
-// }
+:root{
+    --fs-xl: clamp(3.5rem, 12vw + 1rem, 8rem);
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+}
 
-// header{
-//     color: index.$primary
-// }
+*{
+    box-sizing: border-box;
+}
 
 html, body{
+    font-family: index.$font-stack;
     margin: 0;
     padding: 0;
     height: 100%;
 }
+
 
 main{
     height: 100%;
@@ -25,4 +27,67 @@ main{
     justify-content: space-between;
 }
 
+.header{
 
+    padding: 2em 0;
+    border: 1px solid red;
+    
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__logotitle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .2em;
+        }
+
+
+        &__nav{
+            display: flex;
+            justify-content: center;
+            width: 40%;
+            display: flex;
+            gap: 6em;
+            border: 1px solid black;
+        }
+
+        &__link{
+            font-size: 2em;
+            text-decoration: none;
+        }
+}
+
+
+//Mobile
+@media only screen and (max-width:480px) { 
+
+.header{
+
+        &__container{
+            justify-content: center;
+        }
+        
+        &__logotitle{
+            display: none;
+        }
+
+        &__nav{
+            width: 100%;
+        }
+        
+
+    }
+
+}
+
+
+
+// Desktop
+// @media only screen and (min-width:960px) { 
+
+
+// }
