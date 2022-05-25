@@ -1,6 +1,8 @@
 @use 'abstracts/index';
 @use 'components/container';
 
+$border: 2px solid index.$primary;
+
 :root{
     --fs-xl: clamp(3.5rem, 12vw + 1rem, 8rem);
     --fs-600: 1.5rem;
@@ -19,7 +21,6 @@ html, body{
     height: 100%;
 }
 
-
 main{
     height: 100%;
     display: flex;
@@ -27,67 +28,118 @@ main{
     justify-content: space-between;
 }
 
-.header{
+//Mobile first
 
-    padding: 2em 0;
-    border: 1px solid red;
+.header{    
     
-        &__container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        &__logotitle{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: .2em;
-        }
-
-
-        &__nav{
-            display: flex;
-            justify-content: center;
-            width: 40%;
-            display: flex;
-            gap: 6em;
-            border: 1px solid black;
-        }
-
-        &__link{
-            font-size: 2em;
-            text-decoration: none;
-        }
+    &__container{
+        height: 100%;
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+    }
+    &__logotitle{
+        display: none;
+    }
+    &__nav{
+        font-size: var(--fs-600);
+        width: 100%;
+        height: 60%;
+        padding: 1.2em 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-end;
+        gap: 3em;
+    }
 }
 
-
-//Mobile
-@media only screen and (max-width:480px) { 
-
-.header{
-
-        &__container{
-            justify-content: center;
-        }
-        
-        &__logotitle{
-            display: none;
-        }
-
-        &__nav{
-            width: 100%;
-        }
-        
-
+.midsection{
+    height: 100%;
+    width: 100%;
+    &__container{
+        display: flex;
+        align-items: center;
     }
 
+    &__description{
+        width: 100% ;
+        height: 100%;
+        padding: 0 2em;
+        margin: 0;
+    }
 }
 
 
+.footer{
+    color: white;
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
 
-// Desktop
-// @media only screen and (min-width:960px) { 
+    &__container{
+        background-color: index.$primary;
+        padding: 2em 0;
+    }
+}
+
+//Desktop
+@media only screen and (min-width:40em) {
+
+	.header{    
+
+    &__container{
+        justify-content: space-between;
+    }
+    &__logotitle{
+        display: block;
+    }
+    &__nav{
+        width: calc(40% + .3px);
+        border-left: $border;
+        border-right: $border;
+        border-top: $border;
+    }
+    }
+
+    .midsection{
+        display: flex;
+        justify-content: flex-end;
+        border-top: $border;
+        border-left: $border;
+        border-right: $border;
+
+        &__container{
+        display: flex;
+        justify-content: flex-end;
+            width: 100%;
+        }
+
+        &__description{
+        width: 40% ;
+        border-left: $border;
+
+        }
+        // &__description{
+        //     border-left: $border;
+
+        // }
+        
+    }
+
+    .footer{
+        display: flex;
+        justify-content: flex-end;
+        border-left: $border;
+        &__container{
+            width: calc(40% + 1px);
+
+        }
+        // &__left{
+        //     border-left: $border;
+
+        // }
+    }
 
 
-// }
+}

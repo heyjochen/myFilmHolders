@@ -29,43 +29,91 @@ main {
   justify-content: space-between;
 }
 
-.header {
-  padding: 2em 0;
-  border: 1px solid red;
-}
 .header__container {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: center;
   align-items: center;
 }
 .header__logotitle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.2em;
+  display: none;
 }
 .header__nav {
+  font-size: var(--fs-600);
+  width: 100%;
+  height: 60%;
+  padding: 1.2em 0;
   display: flex;
   justify-content: center;
-  width: 40%;
-  display: flex;
-  gap: 6em;
-  border: 1px solid black;
-}
-.header__link {
-  font-size: 2em;
-  text-decoration: none;
+  align-items: center;
+  align-self: flex-end;
+  gap: 3em;
 }
 
-@media only screen and (max-width: 480px) {
+.midsection {
+  height: 100%;
+  width: 100%;
+}
+.midsection__container {
+  display: flex;
+  align-items: center;
+}
+.midsection__description {
+  width: 100%;
+  height: 100%;
+  padding: 0 2em;
+  margin: 0;
+}
+
+.footer {
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+}
+.footer__container {
+  background-color: #57739f;
+  padding: 2em 0;
+}
+
+@media only screen and (min-width: 40em) {
   .header__container {
-    justify-content: center;
+    justify-content: space-between;
   }
   .header__logotitle {
-    display: none;
+    display: block;
   }
   .header__nav {
+    width: calc(40% + 0.3px);
+    border-left: 2px solid #57739f;
+    border-right: 2px solid #57739f;
+    border-top: 2px solid #57739f;
+  }
+
+  .midsection {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 2px solid #57739f;
+    border-left: 2px solid #57739f;
+    border-right: 2px solid #57739f;
+  }
+  .midsection__container {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
+  }
+  .midsection__description {
+    width: 40%;
+    border-left: 2px solid #57739f;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    border-left: 2px solid #57739f;
+  }
+  .footer__container {
+    width: calc(40% + 1px);
   }
 }
 
