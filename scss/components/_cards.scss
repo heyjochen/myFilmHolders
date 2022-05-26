@@ -1,9 +1,13 @@
 @use '../abstracts/index';
 
-.card{
-    color: index.$primary;
-}
 
-.lang{
-    color: black;
+.card{
+    position: absolute;
+    &__project-info{
+        position: relative;
+        width: 20em;
+        height: 20em;
+        border: 2px solid index.$primary;
+    }
+
 }
