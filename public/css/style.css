@@ -1,16 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 header {
-  color: #57739f;
+  color: rgb(87, 115, 159);
 }
 
 .card {
   position: absolute;
 }
 .card__project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1em;
   position: relative;
   width: 20em;
   height: 20em;
-  border: 2px solid #57739f;
+  border: 3px solid rgb(87, 115, 159);
+  box-shadow: 6px 6px 0px -1px rgb(87, 115, 159);
+  border-radius: 1.5em;
+}
+.card__top-info {
+  line-height: 1;
+}
+.card__camera-count {
+  display: flex;
+  justify-content: space-between;
+}
+.card__bottom-info {
+  line-height: 2;
 }
 
 .footer {
@@ -20,7 +37,7 @@ header {
   text-align: center;
 }
 .footer__container {
-  background-color: #57739f;
+  background-color: rgb(87, 115, 159);
   padding: 2em 0;
 }
 .footer__link {
@@ -88,30 +105,30 @@ header {
     height: 60%;
     align-self: flex-end;
     width: calc(40% + 0.3px);
-    border-left: 2px solid #57739f;
-    border-right: 2px solid #57739f;
-    border-top: 2px solid #57739f;
+    border-left: 3px solid rgb(87, 115, 159);
+    border-right: 3px solid rgb(87, 115, 159);
+    border-top: 3px solid rgb(87, 115, 159);
   }
 
   .midsection {
     display: flex;
     justify-content: flex-end;
-    border-top: 2px solid #57739f;
-    border-left: 2px solid #57739f;
-    border-right: 2px solid #57739f;
+    border-top: 3px solid rgb(87, 115, 159);
+    border-left: 3px solid rgb(87, 115, 159);
+    border-right: 3px solid rgb(87, 115, 159);
   }
   .midsection__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 40%;
-    border-left: 2px solid #57739f;
+    border-left: 3px solid rgb(87, 115, 159);
   }
 
   .footer {
     display: flex;
     justify-content: flex-end;
-    border-left: 2px solid #57739f;
+    border-left: 3px solid rgb(87, 115, 159);
   }
   .footer__container {
     width: calc(40% + 1px);
@@ -124,9 +141,29 @@ header {
   --fs-400: 1rem;
 }
 
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
 * {
   box-sizing: border-box;
-  color: #57739f;
+  color: rgb(87, 115, 159);
 }
 
 html, body {
