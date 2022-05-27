@@ -1,13 +1,37 @@
 @use '../abstracts/index';
+@use '../base/border';
 
+$padding: 1em;
+$active-box-shadow: 6px 6px 0px -1px index.$primary;
+
+// -webkit-box-shadow: 10px 10px 0px -5px rgba(87,115,159,1);
+// -moz-box-shadow: 10px 10px 0px -5px rgba(87,115,159,1);
 
 .card{
     position: absolute;
     &__project-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        padding: $padding;
         position: relative;
         width: 20em;
         height: 20em;
-        border: 2px solid index.$primary;
+        border: border.$border;
+        box-shadow: $active-box-shadow;
+        border-radius: 1.5em;
+    }
+    &__top-info{
+        line-height: 1;
+    }
+    &__camera-count{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom-info{
+        line-height: 2;
     }
 
 }
