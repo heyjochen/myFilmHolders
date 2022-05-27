@@ -15,7 +15,7 @@ header {
   position: relative;
   width: 20em;
   height: 20em;
-  border: 3px solid rgb(87, 115, 159);
+  border: 2px solid rgb(87, 115, 159);
   box-shadow: 6px 6px 0px -1px rgb(87, 115, 159);
   border-radius: 1.5em;
 }
@@ -82,10 +82,14 @@ header {
   padding: 1em 2em;
   margin: 0;
 }
+.midsection__title {
+  font-weight: 900;
+}
 
 .container {
-  max-width: 80rem;
+  max-width: 90rem;
   margin: 0 auto;
+  padding: 0 2em;
 }
 
 @media only screen and (min-width: 40em) {
@@ -98,40 +102,46 @@ header {
     align-items: center;
     align-self: flex-end;
     gap: 1em;
-    height: 60%;
+    height: 70%;
     display: flex;
   }
   .header__nav {
-    height: 60%;
+    height: 70%;
     align-self: flex-end;
-    width: calc(40% + 0.3px);
-    border-left: 3px solid rgb(87, 115, 159);
-    border-right: 3px solid rgb(87, 115, 159);
-    border-top: 3px solid rgb(87, 115, 159);
+    width: calc(30% + 0.3px);
+    border-left: 2px solid rgb(87, 115, 159);
+    border-right: 2px solid rgb(87, 115, 159);
+    border-top: 2px solid rgb(87, 115, 159);
   }
 
   .midsection {
     display: flex;
-    justify-content: flex-end;
-    border-top: 3px solid rgb(87, 115, 159);
-    border-left: 3px solid rgb(87, 115, 159);
-    border-right: 3px solid rgb(87, 115, 159);
+    justify-content: space-between;
+    border-top: 2px solid rgb(87, 115, 159);
+    border-left: 2px solid rgb(87, 115, 159);
+    border-right: 2px solid rgb(87, 115, 159);
+    border-bottom: 2px solid rgb(87, 115, 159);
+  }
+  .midsection__nav {
+    width: 4em;
+    height: 100%;
+    border-right: 2px solid rgb(87, 115, 159);
   }
   .midsection__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
-    border-left: 3px solid rgb(87, 115, 159);
+    width: 30%;
+    border-left: 2px solid rgb(87, 115, 159);
   }
 
   .footer {
     display: flex;
     justify-content: flex-end;
-    border-left: 3px solid rgb(87, 115, 159);
+    border-left: 2px solid rgb(87, 115, 159);
   }
   .footer__container {
-    width: calc(40% + 1px);
+    width: calc(30% + 1px);
   }
 }
 :root {
@@ -149,13 +159,7 @@ h2 {
 }
 
 h4 {
-  font-size: 1.5rem;
-  padding: 0;
-  margin: 0;
-}
-
-h4 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1;
   padding: 0;
   margin: 0;
@@ -168,6 +172,7 @@ h4 {
 
 html, body {
   font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   height: 100%;
