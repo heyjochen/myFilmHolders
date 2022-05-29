@@ -4,6 +4,10 @@
     height: 100%;
     width: 100%;
 
+    &__nav-icons{
+        display: none;
+    }
+
     &__container{
         height: 100%;
         display: flex;
