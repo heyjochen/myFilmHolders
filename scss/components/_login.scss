@@ -17,10 +17,14 @@
         margin-top: 1em;
     }
     &__input{
-        border: border.$border-sm;
-        border-radius: .3em;
-        padding: .6em 0 .6em .5em;
+        border: border.$border-width-sm;
+        color: index.$primary;
+        border-radius: border.$border-radius-sm;
+        padding: .8em 0 .8em .5em;
         font-weight: 300;
+    }
+    &__input::placeholder{
+        color: index.$primary;
     }
     &__button{
         width: 8em;
@@ -28,7 +32,7 @@
         margin-top: 3em;
         background-color: index.$primary;
         border: 0;
-        border-radius: 5em;
+        border-radius: border.$border-radius-lg;
         color: index.$secondary;
         padding: 1em;
         font-weight: 700;
