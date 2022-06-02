@@ -1,3 +1,8 @@
 @use '../abstracts/index';
+
+
 $border: 2px solid index.$primary;
-$border-sm: 1px solid index.$primary;
+$border-width-sm: 1px solid index.$primary;
+$border-radius-sm:  .5em;
+$border-radius-md:  1em;
+$border-radius-lg:  2em;
