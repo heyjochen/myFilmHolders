@@ -1,5 +1,24 @@
 @use '../abstracts/index';
+@use '../base/border';
+@use '../base/font-face';
+@use '../base/padding';
 
-header{
-    color: index.$primary;
+
+.buttons{
+    &__button-add{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: padding.$padding-sm-xy;
+        background-color: index.$secondary;
+        border: 0;
+        border-radius: border.$border-radius-sm;
+        font-weight: font-face.$fw-900;
+    }
+    &__button-add::after{
+        content: '+';
+        margin-left: 1em;
+    }
 }
+
+

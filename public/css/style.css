@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-header {
-  color: rgb(87, 115, 159);
+.buttons__button-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75em 1.5em;
+  background-color: rgb(238, 241, 244);
+  border: 0;
+  border-radius: 0.5em;
+  font-weight: 900;
+}
+.buttons__button-add::after {
+  content: "+";
+  margin-left: 1em;
 }
 
 .card {
@@ -69,6 +80,48 @@ header {
   height: 2px;
   width: 100%;
   background-color: rgb(87, 115, 159);
+}
+
+.login {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0.75em;
+}
+.login__title {
+  margin: 0 auto;
+  margin-top: 2em;
+}
+.login__label {
+  margin-top: 1em;
+}
+.login__input {
+  border: 1px solid rgb(87, 115, 159);
+  color: rgb(87, 115, 159);
+  border-radius: 0.5em;
+  padding: 0.8em 0 0.8em 0.5em;
+  font-weight: 300;
+}
+.login__input::placeholder {
+  color: rgb(87, 115, 159);
+}
+.login__button {
+  width: 8em;
+  margin: 0 auto;
+  margin-top: 3em;
+  background-color: rgb(87, 115, 159);
+  border: 0;
+  border-radius: 2em;
+  color: rgb(238, 241, 244);
+  padding: 1em;
+  font-weight: 700;
+}
+.login__link {
+  text-decoration: underline;
+  font-weight: 700;
+  margin: 0 auto;
+  margin-top: 2em;
 }
 
 .midsection {
