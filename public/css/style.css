@@ -24,8 +24,8 @@
   height: 100%;
   padding: 1em;
   position: relative;
-  width: 20em;
-  height: 20em;
+  width: 15em;
+  height: 15em;
   border: 2px solid rgb(87, 115, 159);
   box-shadow: 6px 6px 0px -1px rgb(87, 115, 159);
   border-radius: 1.5em;
@@ -39,6 +39,17 @@
 }
 .card__bottom-info {
   line-height: 2;
+}
+.card__date {
+  font-weight: 300;
+}
+
+.card h5 {
+  margin: 0;
+}
+
+.card h3 {
+  margin: 0;
 }
 
 .footer {
@@ -245,7 +256,11 @@ p {
   margin-bottom: 1rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 3rem 0 1.38rem;
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -273,7 +288,8 @@ h5 {
   font-size: 1.25rem;
 }
 
-small, .text_small {
+small,
+.text_small {
   font-size: 0.8rem;
 }
 
