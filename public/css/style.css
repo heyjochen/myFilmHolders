@@ -9,9 +9,28 @@
   border-radius: 0.5em;
   font-weight: 900;
 }
-.buttons__button-add::after {
+
+.input__active {
+  border: 0.2em solid rgb(87, 115, 159);
+  border-radius: 0.5em;
+  padding: 0.75em 1.5em;
+  font-weight: 900;
+}
+.input__active::placeholder {
+  color: rgb(87, 115, 159);
+}
+.input__placeholder {
+  border: 0.2em solid rgb(87, 115, 159);
+  border-radius: 0.5em;
+  padding: 0.75em 1.5em;
+  font-weight: 900;
+  background-color: rgb(238, 241, 244);
+}
+.input__placeholder::placeholder {
+  color: rgb(87, 115, 159);
+}
+.input__placeholder::after {
   content: "+";
-  margin-left: 1em;
 }
 
 .card {
