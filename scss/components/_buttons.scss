@@ -14,8 +14,33 @@
     border-radius: border.$border-radius-sm;
     font-weight: font-face.$fw-900;
   }
-  &__button-add::after {
+  // &__button-add::after {
+  //   content: "+";
+  //   margin-left: 1em;
+  // }
+}
+
+.input {
+  &__active {
+    border: 0.2em solid index.$primary;
+    border-radius: border.$border-radius-sm;
+    padding: padding.$padding-sm-xy;
+    font-weight: font-face.$fw-900;
+  }
+  &__active::placeholder {
+    color: index.$primary;
+  }
+  &__placeholder {
+    border: 0.2em solid index.$primary;
+    border-radius: border.$border-radius-sm;
+    padding: padding.$padding-sm-xy;
+    font-weight: font-face.$fw-900;
+    background-color: index.$secondary;
+  }
+  &__placeholder::placeholder {
+    color: index.$primary;
+  }
+  &__placeholder::after {
     content: "+";
-    margin-left: 1em;
   }
 }
