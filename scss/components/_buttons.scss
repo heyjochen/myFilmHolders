@@ -18,11 +18,21 @@
   //   content: "+";
   //   margin-left: 1em;
   // }
+  &__button-round {
+    margin: 0 auto;
+    margin-top: 3em;
+    background-color: index.$primary;
+    border: 0;
+    border-radius: border.$border-radius-lg;
+    color: index.$secondary;
+    padding: padding.$padding-sm-xy;
+    font-weight: 700;
+  }
 }
 
 .input {
   &__active {
-    border: 0.2em solid index.$primary;
+    border: border.$border-width-sm;
     border-radius: border.$border-radius-sm;
     padding: padding.$padding-sm-xy;
     font-weight: font-face.$fw-900;
@@ -31,7 +41,7 @@
     color: index.$primary;
   }
   &__placeholder {
-    border: 0.2em solid index.$primary;
+    border: border.$border-width-sm;
     border-radius: border.$border-radius-sm;
     padding: padding.$padding-sm-xy;
     font-weight: font-face.$fw-900;
