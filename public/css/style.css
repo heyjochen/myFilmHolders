@@ -24,7 +24,7 @@
   border: 2px solid rgb(87, 115, 159);
   border-radius: 0.5em;
   padding: 1em 1.5em;
-  font-weight: 900;
+  font-weight: 400;
 }
 .input__active::placeholder {
   color: rgb(87, 115, 159);
@@ -33,7 +33,7 @@
   border: 2px solid rgb(87, 115, 159);
   border-radius: 0.5em;
   padding: 1em 1.5em;
-  font-weight: 900;
+  font-weight: 400;
   background-color: rgb(238, 241, 244);
 }
 .input__placeholder::placeholder {
@@ -107,7 +107,7 @@
 }
 .header__nav {
   font-size: var(--fs-600);
-  padding: 1.2em 0;
+  padding: 1.5em 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,6 +170,13 @@
 }
 
 @media only screen and (min-width: 60em) {
+  .main__desktop {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   body {
     padding: 0 2em;
   }
@@ -238,6 +245,22 @@
     width: calc(35% + 1px);
   }
 }
+.container {
+  height: 100%;
+}
+
+.header {
+  text-align: center;
+}
+.header .header__heading {
+  padding: 1.5em 0;
+  margin: 0;
+  border-bottom: 2px solid rgb(87, 115, 159);
+}
+.header .header__span-flash {
+  color: rgb(246, 202, 86);
+}
+
 :root {
   --fs-xl: clamp(3.5rem, 12vw + 1rem, 8rem);
   --fs-600: 1.5rem;
@@ -303,15 +326,9 @@ small,
   color: rgb(87, 115, 159);
 }
 
-html, body {
+html,
+body {
   height: 100%;
-}
-
-main {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
