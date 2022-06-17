@@ -1,0 +1,20 @@
+@use "../abstracts/index";
+@use "../base/border";
+@use "../base/padding";
+@use "../components/buttons";
+
+.container {
+  height: 100%;
+}
+
+.header {
+  text-align: center;
+  .header__heading {
+    padding: 1.5em 0;
+    margin: 0;
+    border-bottom: border.$border-width-sm;
+  }
+  .header__span-flash {
+    color: index.$flash;
+  }
+}

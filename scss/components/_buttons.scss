@@ -35,7 +35,7 @@
     border: border.$border-width-sm;
     border-radius: border.$border-radius-sm;
     padding: padding.$padding-sm-xy;
-    font-weight: font-face.$fw-900;
+    font-weight: font-face.$fw-400;
   }
   &__active::placeholder {
     color: index.$primary;
@@ -44,7 +44,7 @@
     border: border.$border-width-sm;
     border-radius: border.$border-radius-sm;
     padding: padding.$padding-sm-xy;
-    font-weight: font-face.$fw-900;
+    font-weight: font-face.$fw-400;
     background-color: index.$secondary;
   }
   &__placeholder::placeholder {
