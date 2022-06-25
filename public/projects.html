@@ -50,61 +50,51 @@
   </head>
 
   <body>
-    <header class="header-projects">
-      <h4 class="header-projects__heading">
-        Your <span class="flash">projects</span>
-      </h4>
-    </header>
-
-    <main class="main-projects">
-      <input type="text" class="input__active" placeholder="Title" />
-      <div class="main-projects__camera">
-        <button class="buttons__button-add">Chamonix</button>
-        <button class="buttons__button-add">Chamonix</button>
-      </div>
-      <div class="main-projects__lenses">
-        <button class="buttons__button-add">Fuji 250 5.6</button>
-        <button class="buttons__button-add">Fuji 250 5.6</button>
-      </div>
-      <div class="main-projects__film">
-        <button class="buttons__button-add">Kodak Portra</button>
-        <button class="buttons__button-add">Kodak Portra</button>
-      </div>
-      <button class="buttons__button-add">Date</button>
-      <input
-        type="text"
-        class="main-projects__notes input__placeholder"
-        placeholder="Add Notes"
-      />
+    <main class="main">
+      <header class="projects__header">
+        <h4 class="projects__nav">Your <span class="flash">projects</span></h4>
+      </header>
+      <section class="projects__inner">
+        <input type="text" class="input__active" placeholder="Title" />
+        <div class="projects__camera">
+          <button class="buttons__button-add">Chamonix</button>
+          <button class="buttons__button-add">Chamonix</button>
+        </div>
+        <div class="projects__lenses">
+          <button class="buttons__button-add">Fuji 250 5.6</button>
+          <button class="buttons__button-add">Fuji 250 5.6</button>
+        </div>
+        <div class="projects__film">
+          <button class="buttons__button-add">Kodak Portra</button>
+          <button class="buttons__button-add">Kodak Portra</button>
+        </div>
+        <button class="buttons__button-add">Date</button>
+        <input
+          type="text"
+          class="projects__notes input__placeholder"
+          placeholder="Add Notes"
+        />
+        <div class="projects__record">
+          <button class="buttons__button-add">Add Image</button>
+          <button class="buttons__button-add">Add Location</button>
+        </div>
+      </section>
+      <footer class="projects__footer">
+        <img
+          src="https://source.unsplash.com/random/300×300"
+          alt=""
+          class="footer-projects__logo"
+          width="30px"
+          height="30px"
+        /><img
+          src="https://source.unsplash.com/random/300×300"
+          alt=""
+          class="footer-projects__logo"
+          width="30px"
+          height="30px"
+        />
+      </footer>
     </main>
-
-    <footer class="footer-projects">
-      <img
-        src="https://source.unsplash.com/random/300×300"
-        alt=""
-        class="footer-projects__logo"
-        width="30px"
-        height="30px"
-      /><img
-        src="https://source.unsplash.com/random/300×300"
-        alt=""
-        class="footer-projects__logo"
-        width="30px"
-        height="30px"
-      /><img
-        src="https://source.unsplash.com/random/300×300"
-        alt=""
-        class="footer-projects__logo"
-        width="30px"
-        height="30px"
-      /><img
-        src="https://source.unsplash.com/random/300×300"
-        alt=""
-        class="footer-projects__logo"
-        width="30px"
-        height="30px"
-      />
-    </footer>
 
     <script type="text/javascript" src="js/main.js"></script>
   </body>
