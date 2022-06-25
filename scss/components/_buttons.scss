@@ -5,6 +5,8 @@
 
 .buttons {
   &__button-add {
+    margin: 0.25em 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +33,11 @@
 }
 
 .input {
+  margin: 0.25em 0;
+  // width: 100%;
   &__active {
+    // width: 100%;
+    margin: 0.25em 0;
     border: border.$border-width-sm;
     border-radius: border.$border-radius-sm;
     padding: padding.$padding-sm-xy;
@@ -40,7 +46,9 @@
   &__active::placeholder {
     color: index.$primary;
   }
+
   &__placeholder {
+    margin: 0.25em 0;
     border: border.$border-width-sm;
     border-radius: border.$border-radius-sm;
     padding: padding.$padding-sm-xy;
