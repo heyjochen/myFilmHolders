@@ -21,6 +21,10 @@ main {
   justify-content: space-between;
 }
 
+img {
+  max-width: 100%;
+}
+
 header {
   border-bottom: border.$border-width-sm;
 }
