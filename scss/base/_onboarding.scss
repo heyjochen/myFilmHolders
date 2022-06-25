@@ -1,0 +1,31 @@
+@use "../abstracts/index";
+@use "../base/border";
+@use "../base/font-face";
+@use "../base/padding";
+
+.line {
+  height: 0.2em;
+  background-color: index.$secondary;
+  margin: 0 1em;
+  margin-top: 2em;
+  &__progress {
+    width: 25%;
+    height: 0.2em;
+    background-color: index.$primary;
+  }
+}
+
+.onboarding {
+  &__img {
+    margin: 0 auto;
+    border: 1px solid black;
+    height: 20em;
+    width: 80%;
+  }
+}
+
+.footer-onboarding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
