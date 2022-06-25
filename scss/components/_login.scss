@@ -4,12 +4,17 @@
 @use "../components/buttons";
 
 .login {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 0.75em;
-  // align-items: center;
+  &__header {
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 0;
+    align-items: center;
+  }
+  &__nav {
+    margin: 0;
+  }
   &__title {
     margin: 0 auto;
     margin-top: 2em;
@@ -21,4 +26,15 @@
     margin: 0 auto;
     margin-top: 2em;
   }
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__container {
+      width: 100%;
+    }
+  }
+  // &__link {
+  //   background-color: index.$primary;
+  // }
 }
