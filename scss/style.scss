@@ -2,6 +2,7 @@
 @use "components";
 @use "utilities";
 @use "base";
+@use "./base/border";
 
 * {
   box-sizing: border-box;
@@ -10,13 +11,25 @@
 
 html,
 body {
-  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
-  height: 7em;
+  border-bottom: border.$border-width-sm;
 }
 
 footer {
-  height: 7em;
+  border-top: border.$border-width-sm;
+}
+
+.flash {
+  color: abstracts.$flash;
 }
