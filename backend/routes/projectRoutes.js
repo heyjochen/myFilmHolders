@@ -7,9 +7,8 @@ const {
   deleteProject,
 } = require("../controllers/projectsController");
 
-router.get("/", getProjects);
-
-router.post("/", setProject);
+router.route("/").get(getProjects).post(setProject);
+router.route("/:id").delete(deleteProject).put(updateProject);
 
 router.put("/:id", updateProject);
 
