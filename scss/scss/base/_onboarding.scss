@@ -1,0 +1,39 @@
+@use "../abstracts/index";
+@use "../base/border";
+@use "../base/font-face";
+@use "../base/padding";
+
+.onboarding {
+  &__line {
+    height: 0.2em;
+    background-color: index.$secondary;
+    margin: 0 1em;
+    margin-top: 2em;
+    &-progress {
+      width: 25%;
+      height: 0.2em;
+      background-color: index.$primary;
+    }
+  }
+  &__img {
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+    width: 80%;
+    object-fit: cover;
+  }
+  &__title {
+    margin: 0 0.5em;
+  }
+  &__input {
+    margin: 0 auto;
+  }
+  &__buttons {
+    margin: 0 auto;
+  }
+  &__footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+  }
+}

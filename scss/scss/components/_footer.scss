@@ -1,0 +1,30 @@
+@use "../abstracts/index";
+@use "../base/border";
+
+.footer {
+  color: white;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+
+  &__container {
+    background-color: index.$primary;
+    padding: 2em 0;
+  }
+
+  &__link {
+    color: white;
+  }
+}
+
+//Desktop
+@media only screen and (min-width: 60em) {
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    border-left: border.$border;
+    &__container {
+      width: calc(35% + 1px);
+    }
+  }
+}

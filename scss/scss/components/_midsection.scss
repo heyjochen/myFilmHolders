@@ -1,0 +1,60 @@
+@use "../base/border";
+
+.midsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  &__nav-icons {
+    display: none;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__description {
+    text-align: center;
+    width: 90%;
+    padding: 1em 2em;
+    margin: 0;
+  }
+  &__title {
+    font-weight: 900;
+  }
+}
+
+//Desktop
+@media only screen and (min-width: 60em) {
+  .midsection {
+    border-left: border.$border;
+    border-right: border.$border;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 4em 0;
+      width: 4em;
+      border-right: border.$border;
+    }
+
+    &__nav-icons {
+      display: block;
+    }
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 35%;
+      border-left: border.$border;
+    }
+  }
+}
