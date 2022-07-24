@@ -14,6 +14,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use('/api/projects', require('./routes/projectRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
+app.use('/api/newsletter', require('./routes/newsletter'));
 
 // Serve frontend
 if (process.env.NODE_ENV === 'production') {
